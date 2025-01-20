@@ -7,9 +7,9 @@ from bs4 import BeautifulSoup
 import baostock as bs
 import pandas as pd
 from dateutil.relativedelta import relativedelta
-from py_gen.py_search.search import baidu_search
-from py_gen.py_search.web_driver_exp.web_driver_util_url_shot import get_url_ROI
-from user_interface.stock_expert.llm_subsystem.llm_subsys_main import summarize_main_content
+from py_search.search import baidu_search
+from py_search.web_driver_exp.web_driver_util_url_shot import get_url_ROI
+from llm_subsystem.llm_subsys_main import summarize_main_content
 
 
 def html_h_and_p(html_content):

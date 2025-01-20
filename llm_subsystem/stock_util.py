@@ -11,10 +11,10 @@ import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from pandas.core.interchange.dataframe_protocol import DataFrame
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../../")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
 
-import user_interface.stock_data_online.baoStock.price_vol_amount_pe_pb as tool_funcs
-from user_interface.stock_expert.llm_subsystem.stock_suffix import add_stock_exchange_suffix
+import stock_data_online.baoStock.price_vol_amount_pe_pb as tool_funcs
+from llm_subsystem.stock_suffix import add_stock_exchange_suffix
 
 
 class FuncCallNode:

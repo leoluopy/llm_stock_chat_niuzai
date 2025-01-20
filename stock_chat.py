@@ -9,14 +9,14 @@ import sys, os
 
 from pandas import DataFrame
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/")
 
-from user_interface.stock_expert.llm_subsystem.stock_util import load_func_call_list, \
+from llm_subsystem.stock_util import load_func_call_list, \
     json_to_call_node, plot_data, FuncCallNode
-from user_interface.stock_expert.insert_thread import insert_record_into_database
-from user_interface.stock_expert.llm_subsystem.llm_subsys_main import general_answer, query_classify, cot_rewrite, \
+from insert_thread import insert_record_into_database
+from llm_subsystem.llm_subsys_main import general_answer, query_classify, cot_rewrite, \
     tool_call, summary_answer, query_chart_classify
-from user_interface.stock_data_online.baoStock.price_vol_amount_pe_pb import get_recent_10_years_index_basic_info, \
+from stock_data_online.baoStock.price_vol_amount_pe_pb import get_recent_10_years_index_basic_info, \
     get_recent_10_years_corporation_basic_info, get_recent_30_days_index_basic_info, \
     get_recent_30_days_corporation_basic_info
 
