@@ -1,0 +1,111 @@
+[
+{
+  "name": "get_today_date_in_words",
+  "description": "\n    get today's date string\n    :return: today's date string, eg: '今天是:2014年10月10日'\n    ",
+  "parameters": {},
+  "returns": {
+    "type": "str",
+    "description": "today's date string, eg: '今天是:2014年10月10日'"
+  }
+}
+,{
+  "name": "get_index_pe_trend_line_chart_and_comment",
+  "description": "\n    given index name, return the index PE trend line chart 、PE trend description、PE peak value percentage description.\n    :param index_name: index name can only be[\"创业板\",\"科创板\",\"深证成指\",\"上证综指\"]\n    :return:  return the index PE trend line chart 、PE trend description、PE peak value percentage description.\n    ",
+  "parameters": {
+    "index_name": {
+      "type": "str",
+      "description": "index name can only be[\"创业板\",\"科创板\",\"深证成指\",\"上证综指\"]"
+    }
+  },
+  "returns": {
+    "type": "str",
+    "description": " return the index PE trend line chart 、PE trend description、PE peak value percentage description."
+  }
+}
+,{
+  "name": "get_recent_30_days_corporation_basic_info",
+  "description": "\n    given corporation name 、corporation code, return the basic info of company for recent 30 days, basic info has company close price, trade volume, trade amount, trade turn, chg， pe, pb\n    :param corporation_name: stock corporation name\n    :param corporation_code: stock corporation code\n    :return: the basic info of company for recent 30 days, basic info has company close price, trade volume, trade amount, trade turn, chg， pe, pb\n    ",
+  "parameters": {
+    "corporation_name": {
+      "type": "str",
+      "description": "stock corporation name"
+    },
+    "corporation_code": {
+      "type": "str",
+      "description": "stock corporation code"
+    }
+  },
+  "returns": {
+    "type": "str",
+    "description": "the basic info of company for recent 30 days, basic info has company close price, trade volume, trade amount, trade turn, chg， pe, pb"
+  }
+}
+,{
+  "name": "get_recent_30_days_index_basic_info",
+  "description": "\n    given index name 、index code, return the basic info of index for recent 30 days, basic info has index close price, trade volume, trade amount, trade chg\n    :param index_name: stock index name\n    :param index_code: stock index code\n    :return:  return the basic info of index for recent 30 days, basic info has index close price, trade volume, trade amount, trade chg\n    ",
+  "parameters": {
+    "index_name": {
+      "type": "str",
+      "description": "stock index name"
+    },
+    "index_code": {
+      "type": "str",
+      "description": "stock index code"
+    }
+  },
+  "returns": {
+    "type": "str",
+    "description": " return the basic info of index for recent 30 days, basic info has index close price, trade volume, trade amount, trade chg"
+  }
+}
+,{
+  "name": "search_internet_summarize",
+  "description": "\n    search internet for keywords , get the summarized content and reference url\n    :param key_words: keywords for search\n    :return: summarized content and reference url\n    ",
+  "parameters": {
+    "key_words": {
+      "type": "str",
+      "description": "keywords for search"
+    }
+  },
+  "returns": {
+    "type": "str",
+    "description": "summarized content and reference url"
+  }
+}
+,{
+  "name": "get_recent_10_years_index_basic_info",
+  "description": "\n    given index name 、index code, return the basic info of index for recent 10 years, basic info has index close price, trade volume, trade amount, trade chg\n    :param index_name: stock index name\n    :param index_code: stock index code\n    :return:  return the basic info of index for recent 10 years, basic info has index close price, trade volume, trade amount, trade chg\n    ",
+  "parameters": {
+    "index_name": {
+      "type": "str",
+      "description": "stock index name"
+    },
+    "index_code": {
+      "type": "str",
+      "description": "stock index code"
+    }
+  },
+  "returns": {
+    "type": "str",
+    "description": " return the basic info of index for recent 10 years, basic info has index close price, trade volume, trade amount, trade chg"
+  }
+}
+,{
+  "name": "get_recent_10_years_corporation_basic_info",
+  "description": "\n    given corporation name 、corporation code, return the basic info of company for recent 10 years, basic info has company close price, trade volume, trade amount, trade turn, chg， pe, pb\n    :param corporation_name: stock corporation name\n    :param corporation_code: stock corporation code\n    :return: the basic info of company for recent 10 years, basic info has company close price, trade volume, trade amount, trade turn, chg， pe, pb\n    ",
+  "parameters": {
+    "corporation_name": {
+      "type": "str",
+      "description": "stock corporation name"
+    },
+    "corporation_code": {
+      "type": "str",
+      "description": "stock corporation code"
+    }
+  },
+  "returns": {
+    "type": "str",
+    "description": "the basic info of company for recent 10 years, basic info has company close price, trade volume, trade amount, trade turn, chg， pe, pb"
+  }
+}
+]

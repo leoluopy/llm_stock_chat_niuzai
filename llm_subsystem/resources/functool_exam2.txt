@@ -1,0 +1,39 @@
+```json
+[
+  {
+    "tools": {
+      "tool": "get_last_30_days_index_close_value",
+      "tool_input": {
+        "index_name": "上证指数",
+        "index_code": "000001"
+      }
+    }
+  },
+  {
+    "tools": {
+      "tool": "get_last_30_days_index_close_value",
+      "tool_input": {
+        "index_name": "深证成指",
+        "index_code": "399001"
+      }
+    }
+  },
+  {
+    "tools": {
+      "tool": "get_percentage_lower_than_today",
+      "tool_input": {
+        "index_name": "上证指数",
+        "index_code": "000001"
+      }
+    }
+  },
+  {
+    "tools": {
+      "tool": "get_percentage_lower_than_today",
+      "tool_input": {
+        "index_name": "深证成指",
+        "index_code": "399001"
+      }
+    }
+  }
+]

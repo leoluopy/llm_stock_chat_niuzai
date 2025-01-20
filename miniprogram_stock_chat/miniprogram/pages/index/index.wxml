@@ -1,0 +1,37 @@
+<view class="chat-container">
+    <scroll-view scroll-y="true" class="chat-history" scroll-top="{{scrollTop}}">
+        <!-- 你可以在这里添加更多的聊天信息 -->
+        <view class="candidate-inputs" id="candidate-inputs">
+            <text class="{{isHintVisible ? 'question-hint' : 'question-hint hidden'}}">你可以点击尝试如下的问题：</text>
+            <block wx:for="{{candidateInputs}}" wx:key="index">
+                <view class="{{isHintVisible ? 'candidate-input' : 'question-hint hidden'}}" bindtap="sendMsgByExam" data-message="{{item}}">
+                    {{item}}
+                </view>
+            </block>
+
+            <block wx:for="{{messages}}" wx:key="index">
+                <div class="textbox {{item.type}}">
+                    <block wx:if="{{item.isImage}}">
+                        <image class="text-wrapper-{{item.type}}" src="{{item.content}}" mode="widthFix"></image>
+                    </block>
+                    <block wx:elif="{{item.isRichText}}">
+                        <rich-text id="richUrl" data-url="{{item.url}}" class="text-wrapper-{{item.type}}" nodes="{{item.content}}" bindtap="handleLinkTap"></rich-text>
+                    </block>
+                    <block wx:else>
+                        <p class="text-wrapper-{{item.type}}">{{item.content}}</p>
+                    </block>
+                </div>
+            </block>
+
+        </view>
+    </scroll-view>
+
+    <view class="floating-button" bindtap="handleButtonClick">
+        <image src="/components/icons/circle.jpeg" style="width:30px;height:30px;"></image>
+    </view>
+
+    <view class="chat-input">
+        <input type="text" class="message-input" id="userInput" placeholder="输入消息..." bindinput="onInputChange" value="{{inputMessage}}" />
+        <button id="sendButton" bindtap="senndMsgByInput">发送</button>
+    </view>
+</view>

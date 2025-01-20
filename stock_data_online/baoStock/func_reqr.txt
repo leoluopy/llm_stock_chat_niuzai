@@ -1,0 +1,5 @@
+
+stock info request :
+======================================
+company price pe pb 
+index price pe pb

@@ -1,0 +1,145 @@
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-items: flex-end;*/
+}
+
+.question-hint {
+    font-family: 'Microsoft YaHei', sans-serif; /* 使用微软雅黑字体 */
+    font-weight: bold; /* 加粗字体 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加文本阴影以模拟一些艺术效果 */
+    font-size: 12px; /* 你可以根据需要调整字体大小 */
+    letter-spacing: 1px; /* 字母间距，可以调整以增强艺术效果 */
+    color: #494545; /* 字体颜色，你可以根据需要选择 */
+    /* 如果需要更复杂的艺术效果，可以考虑使用SVG或图片替代 */
+}
+
+.candidate-inputs {
+    display: flex;
+    flex-direction: column; /* 初始设置为列布局，但我们会用子元素的 flex-wrap 来处理换行 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 如果需要整个容器内容垂直居中（可选） */
+    flex-wrap: wrap; /* 允许子元素换行 */
+    height: 70vh; /* 假设我们希望它占满整个视口高度，可以根据需要调整 */
+    padding: 10px; /* 给一些内边距，让内容不会紧贴边缘 */
+    box-sizing: border-box; /* 确保内边距和边框不会增加容器的实际大小 */
+    overflow-y: auto; /* 如果内容超出容器高度，允许垂直滚动 */
+}
+
+.candidate-input {
+    display: inline-block;
+    margin: 3px; /* 给每个子元素一些外边距，避免紧贴在一起 */
+    padding: 3px; /* 增加一些内边距，让点击区域更大 */
+    background-color: #f0f0f0; /* 背景色，便于区分 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示为手型，表示可点击 */
+    white-space: nowrap; /* 防止文本自动换行，确保每行完整显示一个元素 */
+    box-sizing: border-box; /* 确保内边距和边框不会增加元素的实际大小 */
+}
+
+.chat-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.chat-image {
+    width: 650px;
+    height: 450px;
+}
+
+.chat-history {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.chat-message {
+    margin-bottom: 16px;
+}
+
+.clickable-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    /*flex: 1;*/
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.chat-input button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+.message-input {
+    width: 600px; /* 或者指定一个具体的像素值，比如300px */
+    padding: 10px; /* 内边距，可以根据需要调整 */
+    border: 1px solid #ccc; /* 边框颜色和宽度，可以根据需要调整 */
+    border-radius: 4px; /* 圆角边框，可以根据需要调整或移除 */
+    font-size: 16px; /* 字体大小 */
+    box-sizing: border-box; /* 确保内边距和边框包含在宽度内 */
+    outline: none; /* 移除焦点时的轮廓线，但注意可访问性 */
+    /* 可以添加其他样式，比如背景色、颜色等 */
+}
+
+.user {
+    text-align: right;
+    /*background-color: lightyellow;*/
+}
+
+.bot {
+    text-align: left;
+    /*background-color: lightgray;*/
+}
+
+.text-wrapper-user {
+    text-align: right;
+    background-color: lightgray;
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.text-wrapper-bot {
+    text-align: left;
+    background-color: lightyellow;
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}

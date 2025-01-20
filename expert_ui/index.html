@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛仔财经大模型助手</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-history" id="messages">
+            <!-- 你可以在这里添加更多的聊天信息 -->
+            <div class="candidate-inputs" id="candidate-inputs">
+                <p class="question-hint"> 你可以点击尝试如下的问题：</p>
+                <div class="candidate-input" onclick="sendMessage('你能做什么？')">你能做什么？</div>
+                <div class="candidate-input" onclick="sendMessage('市盈率是什么？')">市盈率是什么？</div>
+                <div class="candidate-input" onclick="sendMessage('最新芯片行业利好消息！')">最新芯片行业利好消息！</div>
+                <div class="candidate-input" onclick="sendMessage('中芯国际最近股价走势')">中芯国际最近股价走势</div>
+                <div class="candidate-input" onclick="sendMessage('寒武纪当前股价和市盈率？')">寒武纪当前股价和市盈率？</div>
+                <div class="candidate-input" onclick="sendMessage('今日大盘情况？')">今日大盘情况？</div>
+                <div class="candidate-input" onclick="sendMessage('推荐几只芯片股')">推荐几只芯片股</div>
+                <div class="candidate-input" onclick="sendMessage('创业板估值如何？')">创业板估值如何？</div>
+                <div class="candidate-input" onclick="sendMessage('A股有多少支破净的公司？')">A股有多少支破净的公司？</div>
+                <div class="candidate-input" onclick="sendMessage('从最近10年看创业板是低估的吗？')">从最近10年看创业板是低估的吗？</div>
+                <div class="candidate-input" onclick="sendMessage('工商银行估值偏高不？')">工商银行估值偏高不？</div>
+                <div class="candidate-input" onclick="sendMessage('特朗普最近出台了什么针对中国的新政策吗？对A股什么影响？')">特朗普最近出台了什么针对中国的新政策吗？对A股什么影响？</div>
+                <div class="candidate-input" onclick="sendMessage('价值板块当前是低估值吗？')">价值板块当前是低估值吗？</div>
+                <div class="candidate-input" onclick="sendMessage('近10年紫光国微估值走势')">近10年紫光国微估值走势</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" class="message-input" id="userInput" placeholder="输入消息...">
+            <button id="sendButton">发送</button>
+        </div>
+    </div>
+</body>
+</html>
