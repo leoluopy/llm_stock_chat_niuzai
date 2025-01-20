@@ -1,10 +1,10 @@
 import copy
 import sys, os
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../../")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
 
-from user_interface.stock_expert.config_key import ConfigKey
-from user_interface.stock_expert.llm_subsystem.prompts_template import prompt_classify, prompt_cot, prompt_tool_call, \
+from config_key import ConfigKey
+from llm_subsystem.prompts_template import prompt_classify, prompt_cot, prompt_tool_call, \
     prompt_chart_classify
 
 

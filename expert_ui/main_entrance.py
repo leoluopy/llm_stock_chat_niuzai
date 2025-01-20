@@ -12,11 +12,11 @@ import numpy as np
 import websockets
 from matplotlib import pyplot as plt
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../../../")
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
 
-from user_interface.stock_expert.llm_subsystem.llm_subsys_main import query_classify, general_answer, summary_answer
-from user_interface.stock_expert.stock_chat import ToolCallData, get_tool_call_ref
-from user_interface.stock_expert.insert_query_stock_his import query_latest_stock_history, insert_into_stock_history
+from llm_subsystem.llm_subsys_main import query_classify, general_answer, summary_answer
+from stock_chat import ToolCallData, get_tool_call_ref
+from insert_query_stock_his import query_latest_stock_history, insert_into_stock_history
 
 
 def response(websocket, message):
