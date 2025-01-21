@@ -1,16 +1,13 @@
 # websocket_server.py
 import asyncio
-import base64
-import io
 import os
 import pickle
 import sys
 import threading
 import time
-
-import numpy as np
 import websockets
-from matplotlib import pyplot as plt
+import random
+from sqlalchemy.sql.functions import random
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
 
@@ -23,6 +20,7 @@ def response(websocket, message):
     async def socket_respond(response_str, websocket):
         await websocket.send(response_str)
 
+    asyncio.run(socket_respond("分析中.", websocket))
     session_id = str(websocket.id)
     user_input = message.strip()
     print(f"Received from client: {user_input}")
@@ -38,6 +36,7 @@ def response(websocket, message):
     else:
         history_msg_wo_meta = []
 
+    asyncio.run(socket_respond("分析中..", websocket))
     buffer = ""
     prefix_str = ""
     # Classify
@@ -45,6 +44,7 @@ def response(websocket, message):
     print("History: {}".format(history_msg_wo_meta))
     classify_ret = query_classify(message)
     print("Classify Ret:{}".format(classify_ret))
+    asyncio.run(socket_respond("分析中...", websocket))
     if 'A' in classify_ret:
         for part in general_answer(message, history_msg_wo_meta):
             buffer = prefix_str + part
