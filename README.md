@@ -7,7 +7,8 @@
 + 合作联系v信： leoluopy
 
 微信小程序体验二维码【牛仔AIGC开源工具】：
-![牛仔AIGC开源工具](./resources/scan_code_mini_program.jpg)
+
+<img src="./resources/scan_code_mini_program.jpg" alt="描述" width="300" height="300">
 
 网站访问地址【牛仔财经大模型助手】：（推荐使用电脑）
 http://297m5090w9.wicp.vip/ 
