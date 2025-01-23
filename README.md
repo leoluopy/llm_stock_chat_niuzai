@@ -15,7 +15,6 @@ http://297m5090w9.wicp.vip/
 + 欢迎提技术issue到： https://github.com/leoluopy/llm_stock_chat_niuzai
 + 联系作者v信： leoluopy
 + 联系作者，欢迎加入作为开源贡献者
-+ 服务器很贵，欢迎捐赠
 
 <img src="./resources/structure.png" alt="结构" >
 
