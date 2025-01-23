@@ -1,5 +1,6 @@
 
 微信小程序体验二维码【牛仔AIGC开源工具】：
+
 <img src="./resources/scan_code_mini_program.jpg" alt="描述" width="300" height="300">
 
 网站访问地址【牛仔财经大模型助手】：（推荐使用电脑）
@@ -15,7 +16,9 @@ http://297m5090w9.wicp.vip/
 + 联系作者v信： leoluopy
 
 <img src="./resources/structure.png" alt="结构" >
+
 ## 节点介绍
+
 ### HTTP WEB
 功能介绍：HTTP WEB模块提供了系统与外部世界的接口，允许通过HTTP协议接收用户请求并返回回答。这使得系统能够轻松集成到各种Web应用中，扩展其应用场景和覆盖范围。
 
